@@ -1,0 +1,21 @@
+name: Package Addon
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - '*'
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Package Addon
+        uses: BigWigsMods/packager@v2
