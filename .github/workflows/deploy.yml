@@ -19,7 +19,7 @@ jobs:
 
       - name: Package Addon
         uses: BigWigsMods/packager@v2
-         env:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: -g retail
+          gameVersion: retail
