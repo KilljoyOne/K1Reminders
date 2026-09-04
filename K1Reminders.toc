@@ -7,4 +7,4 @@
 ## OptionalDeps: LibSharedMedia-3.0, MRT, ElvUI
 
 K1Reminders.lua
-display\OptionsWindow.lua
+Display\OptionsWindow.lua
