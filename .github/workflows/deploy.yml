@@ -23,7 +23,12 @@ jobs:
         uses: BigWigsMods/packager@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REF: ${{ github.ref }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
         with:
           args: "-g retail"
+
+      - name: Upload Zip to GitHub Release
+        if: github.event_name == 'release'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload ${{ github.event.release.tag_name }} .release/*.zip --clobber
