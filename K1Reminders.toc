@@ -6,5 +6,5 @@
 ## SavedVariables: K1RemindersDB
 ## OptionalDeps: LibSharedMedia-3.0, MRT, ElvUI
 
-K1Reminders.lua
+Main\K1Reminders.lua
 Display\OptionsWindow.lua
