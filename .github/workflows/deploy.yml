@@ -1,19 +1,18 @@
 name: Package Addon
 
 on:
-  workflow_dispatch:
+  release:
+    types: [published]
   push:
     tags:
       - '*'
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      actions: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
