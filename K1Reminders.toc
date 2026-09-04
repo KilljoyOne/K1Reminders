@@ -2,7 +2,7 @@
 ## Title: K1 Reminders
 ## Notes: Reads raid notes and displays personalized timing reminders in combat.
 ## Author: KilljoyOne
-## Version: 1.2.2
+## Version: 1.2.3
 ## SavedVariables: K1RemindersDB
 ## OptionalDeps: LibSharedMedia-3.0, MRT, ElvUI
 
