@@ -1,5 +1,2 @@
 package-as: K1Reminders
 folder-name: K1Reminders
-
-move-folders:
-  K1Reminders: K1Reminders
