@@ -1,4 +1,4 @@
-## Interface: 120100
+## Interface: 120105
 ## Title: K1 Reminders
 ## Notes: Reads raid notes and displays personalized timing reminders in combat.
 ## Author: KilljoyOne
